@@ -16,7 +16,7 @@ public class AddAdres {
     @Step("Заполняем адрес.")
     @И("Заполняем адрес.")
     public void AddAdres() {
-        Allure.addAttachment("Page Source", "text/html", WebDriverRunner.source(), "html");
+
         setOpen.setValue("открытое");
         setAdres.click();
 

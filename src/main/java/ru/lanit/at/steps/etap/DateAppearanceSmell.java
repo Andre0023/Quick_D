@@ -21,7 +21,7 @@ public class DateAppearanceSmell {
     @Step("Выбор даты и отрезка появления запаха.")
     @И("Выбор даты и отрезка появления запаха.")
     public void DateAppearanceSmell() {
-        Allure.addAttachment("Page Source", "text/html", WebDriverRunner.source(), "html");
+
 
         dateAppearance.click();
         numberAppearance.click();

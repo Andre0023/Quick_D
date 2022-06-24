@@ -19,7 +19,7 @@ public class SendForm {
     @Step("Нажать кнопку Отправить")
     @И("Нажать кнопку Отправить 1.")
     public void SendFormOne() {
-        Allure.addAttachment("Page Source", "text/html", WebDriverRunner.source(), "html");
+
        send0.click();
 
     }
@@ -27,21 +27,21 @@ public class SendForm {
     @Step("Нажать кнопку Отправить")
     @И("Нажать кнопку Отправить 2.")
     public void SendFormTwo() {
-        Allure.addAttachment("Page Source", "text/html", WebDriverRunner.source(), "html");
+
         send1.click();
     }
 
     @Step("Нажать кнопку Отправить")
     @И("Нажать кнопку Отправить 3.")
     public void SendFormThree() {
-        Allure.addAttachment("Page Source", "text/html", WebDriverRunner.source(), "html");
+
         send2.click();
     }
 
     @Step("Нажать кнопку Отправить")
     @И("Нажать кнопку Отправить 4.")
     public void SendFormFour() {
-        Allure.addAttachment("Page Source", "text/html", WebDriverRunner.source(), "html");
+
         send3.click();
 
 

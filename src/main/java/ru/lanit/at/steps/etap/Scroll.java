@@ -15,18 +15,18 @@ import static com.codeborne.selenide.Selenide.$;
 public class Scroll {
     private final SelenideElement scroll = $(byText("Ответить"));
 
+    @Attachment
     @Step("Прокрутка экрана вниз.")
     @И("Прокрутка экрана вниз.")
     public void Scroll() {
-        Allure.addAttachment("Page Source", "text/html", WebDriverRunner.source(), "html");
-        scroll.scrollTo();
+
+
+
+
 
 
     }
-    @Attachment(value = "Screenshot", type = "text/html", fileExtension = "html")
-    public byte[] attachPageSource(){
-        Allure.addAttachment("Page Source", "text/html", WebDriverRunner.source(), "html");
-        return WebDriverRunner.source().getBytes(StandardCharsets.UTF_8);
+
     }
 
-}
+

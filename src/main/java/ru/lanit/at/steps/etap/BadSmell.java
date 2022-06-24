@@ -17,7 +17,7 @@ public class BadSmell {
     @Step("Выбор характер запаха.")
     @И("Выбор характер запаха.")
     public void BadSmell() {
-        Allure.addAttachment("Page Source", "text/html", WebDriverRunner.source(), "html");
+
         smell.click();
         typeSmell.setValue("Клопы");
 

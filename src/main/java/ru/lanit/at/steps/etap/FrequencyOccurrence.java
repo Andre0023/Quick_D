@@ -15,7 +15,7 @@ public class FrequencyOccurrence {
     @Step("Выбор периодичности появления запахов.")
     @И("Выбор периодичности появления запахов.")
     public void FrequencyOccurrence() {
-        Allure.addAttachment("Page Source", "text/html", WebDriverRunner.source(), "html");
+
         frequencyOccurrenceSmell.click();
 
     }
