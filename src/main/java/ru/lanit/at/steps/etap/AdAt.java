@@ -23,7 +23,6 @@ public class AdAt implements AdAtt {
                 ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES)
         );
     }
-
     @Override
     public void testDisabled(ExtensionContext context, Optional<String> reason) {
         getDriver(context).close();
