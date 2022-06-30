@@ -1,11 +1,9 @@
 package ru.lanit.at.steps.etap;
 
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.WebDriverRunner;
 import io.cucumber.java.ru.И;
-import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
@@ -17,6 +15,7 @@ public class SendForm {
     private final SelenideElement send3 = $("[id='quiz-page-id-3']").$(byText("Ответить"));
 
     @Step("Нажать кнопку Отправить")
+    @ExtendWith(TestListener.class)
     @И("Нажать кнопку Отправить 1.")
     public void SendFormOne() {
 
@@ -25,6 +24,7 @@ public class SendForm {
     }
 
     @Step("Нажать кнопку Отправить")
+    @ExtendWith(TestListener.class)
     @И("Нажать кнопку Отправить 2.")
     public void SendFormTwo() {
 
@@ -32,6 +32,7 @@ public class SendForm {
     }
 
     @Step("Нажать кнопку Отправить")
+    @ExtendWith(TestListener.class)
     @И("Нажать кнопку Отправить 3.")
     public void SendFormThree() {
 
@@ -39,6 +40,7 @@ public class SendForm {
     }
 
     @Step("Нажать кнопку Отправить")
+    @ExtendWith(TestListener.class)
     @И("Нажать кнопку Отправить 4.")
     public void SendFormFour() {
 

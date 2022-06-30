@@ -1,11 +1,9 @@
 package ru.lanit.at.steps.etap;
 
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.WebDriverRunner;
 import io.cucumber.java.ru.И;
-import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import static com.codeborne.selenide.Selenide.$;
 
@@ -15,6 +13,7 @@ public class BadSmell {
 
 
     @Step("Выбор характер запаха.")
+    @ExtendWith(TestListener.class)
     @И("Выбор характер запаха.")
     public void BadSmell() {
 

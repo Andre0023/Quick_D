@@ -1,12 +1,9 @@
 package ru.lanit.at.steps.etap;
 
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.WebDriverRunner;
 import io.cucumber.java.ru.И;
-import io.qameta.allure.Allure;
 import io.qameta.allure.Step;
-
-
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
@@ -19,6 +16,7 @@ public class DateAppearanceSmell {
 
 
     @Step("Выбор даты и отрезка появления запаха.")
+    @ExtendWith(TestListener.class)
     @И("Выбор даты и отрезка появления запаха.")
     public void DateAppearanceSmell() {
 
